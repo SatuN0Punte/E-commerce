@@ -1,18 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap");
+* {
+  font-family: "K2D", sans-serif;
+}
+header,
+nav {
+  z-index: 1001 !important;
+}
+.subtitle {
+  @apply text-red-700 uppercase tracking-wide font-semibold text-lg;
+}
+.title {
+  @apply text-4xl md:text-5xl md:leading-snug font-bold my-2;
+}
+.summery { 
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Nunito+Sans:wght@200&family=Playpen+Sans:wght@100&display=swap');
-
-
-body {
-    font-family: "K2D", sans-serif;
+  font-size: 19px; /* กำหนดขนาดตัวอักษร */
+  padding: 10px; /* กำหนดระยะห่างของข้อความภายใน element */
+  margin-bottom: 20px;
+}
+.section-container {
+  @apply max-w-screen-2xl container mx-auto xl:px-24 px-4;
 }
 
-.subtitle{
-    @apply text-red uppercase tracking-wide font-semibold text-lg
-}
-.title{
-    @apply text-4xl md:text-5xl md:leading-snug font-bold my-2
+.image {
+    position: relative;
+
 }
 
-.section-container{
-    @apply max-w-screen-2xl container mx-auto xl:px-24 px-4
+.image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    max-width: 200px;
+    z-index: 1;
+}
+
+.image2 {
+    position: absolute;
+    top: 0px;
+    left: 49px;
+    margin: 10px;
+    max-width: 200px;
+    z-index: 2;
+}
+.image3 {
+    position: absolute;
+    top: 0px;
+    left: 89px;
+    margin: 10px;
+    max-width: 200px;
+    z-index: 3;
 }
